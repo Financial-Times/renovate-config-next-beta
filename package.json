@@ -20,25 +20,44 @@
     "renovate": "^13.99.15"
   },
   "renovate-config": {
-    "financial-times": {
+    "financial-times-base": {
+      "description": "Renovate configuration for FT.com repositories.",
       "extends": [
         ":separateMajorReleases",
         ":combinePatchMinorReleases",
         ":ignoreUnstable",
         ":prImmediately",
         ":renovatePrefix",
-        ":semanticPrefixFixDepsChoreOthers",
+        ":semanticCommitsDisabled",
         ":updateNotScheduled",
         ":automergeDisabled",
         ":ignoreModulesAndTests",
         ":maintainLockFilesDisabled",
-        ":autodetectPinVersions",
         ":prHourlyLimit2",
         ":prConcurrentLimit20",
         "group:monorepos",
         "group:recommended",
         "helpers:disableTypesNodeMajor",
         "helpers:oddIsUnstablePackages"
+      ],
+      "labels": [
+        "dependencies ⬆️"
+      ],
+      "rangeStrategy": "replace",
+      "masterIssue": true,
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "@financial-times"
+          ],
+          "rangeStrategy": "pin"
+        },
+        {
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "masterIssueApproval": true
+        }
       ]
     }
   }
