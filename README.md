@@ -9,7 +9,7 @@
 Install the package with npm.
 
 ```
-npm install --save-dev github:financial-times/n-renovate
+npm install --save-dev github:financial-times/renovate-config-next
 ```
 
 Then define the shared configuration in your project's `renovate.json`.
@@ -17,7 +17,7 @@ Then define the shared configuration in your project's `renovate.json`.
 ```json
 {
   "extends": [
-    "config:financial-times-base"
+    "next"
   ]
 }
 ```
