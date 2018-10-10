@@ -1,5 +1,5 @@
 {
-  "name": "@financial-times/n-renovate",
+  "name": "renovate-config-customer-products",
   "version": "0.0.0",
   "description": "Shared configuration for Renovate.",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "renovate": "^13.99.15"
   },
   "renovate-config": {
-    "financial-times-base": {
+    "default": {
       "description": "Renovate configuration for FT.com repositories.",
       "extends": [
         ":onlyNpm",
