@@ -1,7 +1,7 @@
 {
-  "name": "renovate-config-customer-products",
+  "name": "renovate-config-next",
   "version": "0.0.0",
-  "description": "Shared configuration for Renovate.",
+  "description": "Shared Renovate configuration for FT.com.",
   "main": "index.js",
   "scripts": {
     "test": "renovate-config-validator"
