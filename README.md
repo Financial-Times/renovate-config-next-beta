@@ -9,7 +9,7 @@
 Install the package with npm.
 
 ```
-npm install --save-dev github:finanial-times/n-renovate
+npm install --save-dev github:finanial-times/n-renovate#^1.0.0
 ```
 
 Then define the shared configuration in your project's `renovate.json`.
