@@ -19,7 +19,7 @@
     "helpers:oddIsUnstablePackages"
   ],
   "labels": [
-    "dependencies ⬆️"
+    "dependencies"
   ],
   "rangeStrategy": "replace",
   "masterIssue": true,
