@@ -1,2 +1,3 @@
 # n-renovate
-Shared configuration for Renovate.
+
+> Shared configuration for [Renovate](https://renovatebot.com/).

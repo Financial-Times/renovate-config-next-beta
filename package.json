@@ -1,0 +1,45 @@
+{
+  "name": "@financial-times/n-renovate",
+  "version": "1.0.0",
+  "description": "Shared configuration for Renovate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Financial-Times/n-renovate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Financial-Times/n-renovate/issues"
+  },
+  "homepage": "https://github.com/Financial-Times/n-renovate#readme",
+  "devDependencies": {
+    "renovate": "^13.99.15"
+  },
+  "renovate-config": {
+    "financial-times": {
+      "extends": [
+        ":separateMajorReleases",
+        ":combinePatchMinorReleases",
+        ":ignoreUnstable",
+        ":prImmediately",
+        ":renovatePrefix",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":updateNotScheduled",
+        ":automergeDisabled",
+        ":ignoreModulesAndTests",
+        ":maintainLockFilesDisabled",
+        ":autodetectPinVersions",
+        ":prHourlyLimit2",
+        ":prConcurrentLimit20",
+        "group:monorepos",
+        "group:recommended",
+        "helpers:disableTypesNodeMajor",
+        "helpers:oddIsUnstablePackages"
+      ]
+    }
+  }
+}
