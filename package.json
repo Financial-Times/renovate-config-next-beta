@@ -23,6 +23,7 @@
     "financial-times-base": {
       "description": "Renovate configuration for FT.com repositories.",
       "extends": [
+        ":onlyNpm",
         ":separateMajorReleases",
         ":combinePatchMinorReleases",
         ":ignoreUnstable",
