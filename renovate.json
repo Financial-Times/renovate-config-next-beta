@@ -1,0 +1,40 @@
+{
+  "extends": [
+    ":onlyNpm",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":renovatePrefix",
+    ":semanticCommitsDisabled",
+    ":updateNotScheduled",
+    ":automergeDisabled",
+    ":ignoreModulesAndTests",
+    ":maintainLockFilesDisabled",
+    ":prHourlyLimit2",
+    ":prConcurrentLimit20",
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor",
+    "helpers:oddIsUnstablePackages"
+  ],
+  "labels": [
+    "dependencies ⬆️"
+  ],
+  "rangeStrategy": "replace",
+  "masterIssue": true,
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "@financial-times"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "masterIssueApproval": true
+    }
+  ]
+}

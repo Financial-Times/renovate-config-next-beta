@@ -17,7 +17,7 @@ Then define the shared configuration in your project's `renovate.json`.
 ```json
 {
   "extends": [
-    "next"
+    "github>financial-times/renovate-config-next"
   ]
 }
 ```
