@@ -28,6 +28,9 @@
       "packagePatterns": [
         "@financial-times"
       ],
+      "depTypeList": [
+        "dependencies"
+      ],
       "rangeStrategy": "pin"
     },
     {
