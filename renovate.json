@@ -34,6 +34,12 @@
       "rangeStrategy": "pin"
     },
     {
+      "packageNames": [
+        "@financial-times/n-ui"
+      ],
+      "rangeStrategy": "replace"
+    },
+    {
       "depTypeList": [
         "devDependencies"
       ],
