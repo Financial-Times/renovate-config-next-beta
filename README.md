@@ -1,6 +1,6 @@
 # renovate-config-next
 
-[![CircleCI](https://circleci.com/gh/Financial-Times/n-renovate.svg?style=svg)](https://circleci.com/gh/Financial-Times/n-renovate)
+[![CircleCI](https://circleci.com/gh/Financial-Times/renovate-config-next.svg?style=svg)](https://circleci.com/gh/Financial-Times/renovate-config-next)
 
 > Shared configuration for [Renovate](https://renovatebot.com/).
 
