@@ -4,15 +4,11 @@
 
 > Shared configuration for [Renovate](https://renovatebot.com/).
 
+Read more about [how we're using Renovate on it's wiki page](https://github.com/Financial-Times/next/wiki/Renovate).
+
 ## Usage
 
-Install the package with npm.
-
-```
-npm install --save-dev github:financial-times/renovate-config-next
-```
-
-Then define the shared configuration in your project's `renovate.json`.
+Define the shared configuration in your project's `renovate.json` like so.
 
 ```json
 {
