@@ -26,7 +26,7 @@
   "packageRules": [
     {
       "packagePatterns": [
-        "@financial-times"
+        "^@financial-times"
       ],
       "depTypeList": [
         "dependencies"
@@ -42,6 +42,12 @@
     {
       "depTypeList": [
         "devDependencies"
+      ],
+      "masterIssueApproval": true
+    },
+    {
+      "packagePatterns": [
+        "^o-"
       ],
       "masterIssueApproval": true
     }
