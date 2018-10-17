@@ -20,4 +20,4 @@ Define the shared configuration in your project's `renovate.json` like so.
 
 ## Development
 
-Our configuration is defined in [`renovate.json`](/blob/master/renovate.json).
+Our shared configuration is defined in [`renovate.json`](renovate.json).
