@@ -26,7 +26,17 @@
   "packageRules": [
     {
       "packagePatterns": [
-        "^@financial-times"
+        "^@financial-times",
+        "^ft-next-",
+        "^ft-n-",
+        "^n-",
+        "^next-",
+        "^s3o-"
+      ],
+      "packageNames": [
+        "shellpromise",
+        "fetchres",
+        "isomorphic-fetch"
       ],
       "depTypeList": [
         "dependencies"
