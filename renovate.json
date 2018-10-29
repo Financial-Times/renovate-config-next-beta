@@ -5,7 +5,6 @@
     ":combinePatchMinorReleases",
     ":ignoreUnstable",
     ":prImmediately",
-    ":renovatePrefix",
     ":semanticCommitsDisabled",
     ":updateNotScheduled",
     ":automergeDisabled",
