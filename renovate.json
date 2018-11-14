@@ -41,7 +41,7 @@
       "depTypeList": [
         "dependencies"
       ],
-      "rangeStrategy": "pin"
+      "rangeStrategy": "auto"
     },
     {
       "packageNames": [
