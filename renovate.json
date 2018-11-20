@@ -10,7 +10,7 @@
     ":automergeDisabled",
     ":ignoreModulesAndTests",
     ":maintainLockFilesDisabled",
-    ":prHourlyLimit2",
+    ":prHourlyLimit4",
     ":prConcurrentLimit20",
     "group:monorepos",
     "group:recommended",
