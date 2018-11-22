@@ -24,7 +24,7 @@
   "rangeStrategy": "replace",
   "masterIssue": true,
   "prBodyNotes": [
-    ":information_source: Find our documentation at https://github.com/Financial-Times/next/Renovate."
+    ":information_source: Find our documentation at https://github.com/Financial-Times/next/wiki/Renovate."
   ],
   "packageRules": [
     {
