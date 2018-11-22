@@ -22,7 +22,7 @@ Read more about [how we're using Renovate on it's wiki page](https://github.com/
 
 ## Usage
 
-Reference the shared configuration in your repositories own `renovate.json` like so:
+Reference the shared configuration in your repository's own `renovate.json` like so:
 
 ```json
 {
