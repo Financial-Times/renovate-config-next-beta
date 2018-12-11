@@ -64,5 +64,8 @@
       ],
       "masterIssueApproval": true
     }
+  ],
+  "ignoreDeps": [
+    "bower"
   ]
 }
