@@ -66,6 +66,7 @@
     }
   ],
   "ignoreDeps": [
-    "bower"
+    "bower",
+    "node"
   ]
 }
