@@ -8,7 +8,7 @@
 
 We have a custom set of rules for FT.com repositories. We are generally...
 
-* Letting Renovate decide how to [modify/update existing ranges](https://renovatebot.com/docs/configuration-options/#rangestrategy) for our own `dependencies`
+* Letting Renovate decide how to [modify or update existing ranges](https://renovatebot.com/docs/configuration-options/#rangestrategy) on Financial Times owned `dependencies`
 
   * For apps this means pinning to specific versions for reliability/predictability e.g. `@financial-times/n-express@19.19.1`, with pull requests being opened for any new version
 
