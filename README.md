@@ -16,6 +16,8 @@ We have a custom set of rules for FT.com repositories. We are generally...
 
 * Using semver ranges for all other `dependencies` (including [`n-ui`](https://github.com/Financial-Times/n-ui)), only opening pull requests for major version updates
 
+* Grouping updates for our monorepos (such as [x-dash](https://github.com/Financial-Times/x-dash) and [anvil](https://github.com/Financial-Times/anvil)) into a single pull request
+
 * Tracking major updates of `devDependencies` and [Origami](https://registry.origami.ft.com/components) components (`o-*` packages) in the Renovate master issue, but **we're not** opening pull requests automatically for them
 
 Read more about [how we're using Renovate on it's wiki page](https://github.com/Financial-Times/next/wiki/Renovate).
