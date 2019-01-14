@@ -37,5 +37,3 @@ Reference the shared configuration in your repository's own `renovate.json` like
 ## Development
 
 Our shared configuration is defined in [`renovate.json`](renovate.json).
-
-Please open a pull request for any changes you would like to propose and add [@Financial-Times/etg](https://github.com/orgs/Financial-Times/teams/etg) as a reviewer.
