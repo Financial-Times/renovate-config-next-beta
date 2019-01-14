@@ -63,6 +63,13 @@
         "^o-"
       ],
       "masterIssueApproval": true
+    },
+    {
+      "packagePatterns": [
+        "^@financial-times/x-"
+      ],
+      "groupName": "x-dash monorepo",
+      "groupSlug": "x-dash"
     }
   ],
   "ignoreDeps": [
