@@ -59,6 +59,15 @@
       "masterIssueApproval": true
     },
     {
+      "packageNames": [
+        "@financial-times/n-gage",
+        "@financial-times/n-heroku-tools"
+      ],
+      "masterIssueApproval": false,
+      "groupName": "next build tools",
+      "groupSlug": "next-build-tools"
+    },
+    {
       "packagePatterns": [
         "^o-"
       ],
