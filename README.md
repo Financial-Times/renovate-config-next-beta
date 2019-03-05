@@ -22,7 +22,7 @@ We have a custom set of rules for FT.com repositories. We are generally...
 
 * Tracking major updates of `devDependencies` and [Origami](https://registry.origami.ft.com/components) components (`o-*` packages) in the Renovate master issue, but **we're not** opening pull requests automatically for them
 
-Read more about [how we're using Renovate on it's wiki page](https://github.com/Financial-Times/next/wiki/Renovate).
+Read more about [how we're using Renovate on its wiki page](https://github.com/Financial-Times/next/wiki/Renovate).
 
 ## Usage
 
