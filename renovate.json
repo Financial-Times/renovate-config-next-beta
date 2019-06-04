@@ -83,6 +83,13 @@
       ],
       "groupName": "x-dash monorepo",
       "groupSlug": "x-dash"
+    },
+    {
+      "packagePatterns": [
+        "^@financial-times/anvil-"
+      ],
+      "groupName": "anvil monorepo",
+      "groupSlug": "anvil"
     }
   ],
   "ignoreDeps": [
