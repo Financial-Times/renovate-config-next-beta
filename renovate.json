@@ -75,6 +75,10 @@
       "packagePatterns": [
         "^o-"
       ],
+      "packageNames": [
+        "@financial-times/n-profile-ui",
+        "@financial-times/n-live-chat"
+      ],
       "masterIssueApproval": true
     },
     {
