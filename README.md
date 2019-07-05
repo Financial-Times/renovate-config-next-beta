@@ -16,7 +16,7 @@ We have a custom set of rules for FT.com repositories. We are generally...
 
 * Using semver ranges for all other `dependencies` (including [`n-ui`](https://github.com/Financial-Times/n-ui)), only opening pull requests for major version updates
 
-* Grouping updates for our monorepos (such as [x-dash](https://github.com/Financial-Times/x-dash) and [anvil](https://github.com/Financial-Times/anvil)) into a single pull request
+* Grouping updates for our monorepos (such as [x-dash](https://github.com/Financial-Times/x-dash) and [Page Kit](https://github.com/Financial-Times/dotcom-page-kit)) into a single pull request
 
 * [Upgrading Node.js to LTS versions](https://renovatebot.com/docs/node/#configuring-support-policy), including any under their maintenance period.
 

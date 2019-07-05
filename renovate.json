@@ -90,10 +90,10 @@
     },
     {
       "packagePatterns": [
-        "^@financial-times/anvil-"
+        "^@financial-times/dotcom-"
       ],
-      "groupName": "anvil monorepo",
-      "groupSlug": "anvil"
+      "groupName": "page kit monorepo",
+      "groupSlug": "page-kit"
     }
   ],
   "ignoreDeps": [
