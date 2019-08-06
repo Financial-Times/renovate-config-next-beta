@@ -92,6 +92,8 @@
       "packagePatterns": [
         "^@financial-times/dotcom-"
       ],
+      "rangeStrategy": "auto",
+      "masterIssueApproval": false,
       "groupName": "page kit monorepo",
       "groupSlug": "page-kit"
     }
