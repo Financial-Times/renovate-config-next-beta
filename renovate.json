@@ -16,7 +16,8 @@
     "group:monorepos",
     "group:recommended",
     "helpers:disableTypesNodeMajor",
-    "helpers:oddIsUnstablePackages"
+    "helpers:oddIsUnstablePackages",
+    "schedule:nonOfficeHours"
   ],
   "labels": [
     "dependencies"
