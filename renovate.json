@@ -52,12 +52,6 @@
       "rangeStrategy": "auto"
     },
     {
-      "packageNames": [
-        "@financial-times/n-ui"
-      ],
-      "rangeStrategy": "replace"
-    },
-    {
       "depTypeList": [
         "devDependencies"
       ],
