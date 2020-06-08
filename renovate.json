@@ -19,6 +19,7 @@
     "helpers:oddIsUnstablePackages",
     "schedule:nonOfficeHours"
   ],
+  "timezone": "Europe/London",
   "labels": [
     "dependencies"
   ],
