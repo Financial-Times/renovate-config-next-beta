@@ -16,8 +16,10 @@
     "group:monorepos",
     "group:recommended",
     "helpers:disableTypesNodeMajor",
-    "helpers:oddIsUnstablePackages"
+    "helpers:oddIsUnstablePackages",
+    "schedule:nonOfficeHours"
   ],
+  "timezone": "Europe/London",
   "labels": [
     "dependencies"
   ],
@@ -49,12 +51,6 @@
         "dependencies"
       ],
       "rangeStrategy": "auto"
-    },
-    {
-      "packageNames": [
-        "@financial-times/n-ui"
-      ],
-      "rangeStrategy": "replace"
     },
     {
       "depTypeList": [
