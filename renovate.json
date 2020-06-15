@@ -7,7 +7,6 @@
     ":ignoreUnstable",
     ":prImmediately",
     ":semanticCommitsDisabled",
-    ":updateNotScheduled",
     ":automergeDisabled",
     ":ignoreModulesAndTests",
     ":maintainLockFilesDisabled",
@@ -17,7 +16,8 @@
     "group:recommended",
     "helpers:disableTypesNodeMajor",
     "helpers:oddIsUnstablePackages",
-    "schedule:nonOfficeHours"
+    "schedule:nonOfficeHours",
+    ":noUnscheduledUpdates"
   ],
   "timezone": "Europe/London",
   "labels": [
