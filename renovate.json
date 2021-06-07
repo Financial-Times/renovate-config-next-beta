@@ -23,9 +23,9 @@
   "labels": [
     "dependencies"
   ],
-  "supportPolicy": [
-    "lts"
-  ],
+  "node": {
+    "supportPolicy": ["lts"]
+  },
   "branchPrefix": "renovate-",
   "rangeStrategy": "replace",
   "masterIssue": true,
