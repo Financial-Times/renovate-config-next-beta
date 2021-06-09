@@ -93,6 +93,13 @@
     },
     {
       "packagePatterns": [
+        "^@financial-times/privacy-"
+      ],
+      "groupName": "privacy monorepo",
+      "groupSlug": "privacy"
+    },
+    {
+      "packagePatterns": [
         "^@financial-times/dotcom-"
       ],
       "rangeStrategy": "auto",
