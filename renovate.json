@@ -86,6 +86,13 @@
     },
     {
       "packagePatterns": [
+        "^@financial-times/ads-"
+      ],
+      "groupName": "advertising monorepo",
+      "groupSlug": "advertising"
+    },
+    {
+      "packagePatterns": [
         "^@financial-times/dotcom-"
       ],
       "rangeStrategy": "auto",
