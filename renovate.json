@@ -7,7 +7,6 @@
     ":ignoreUnstable",
     ":prImmediately",
     ":semanticCommitsDisabled",
-    ":updateNotScheduled",
     ":automergeDisabled",
     ":ignoreModulesAndTests",
     ":maintainLockFilesDisabled",
@@ -16,8 +15,7 @@
     "group:monorepos",
     "group:recommended",
     "helpers:disableTypesNodeMajor",
-    "helpers:oddIsUnstablePackages",
-    "schedule:nonOfficeHours"
+    "helpers:oddIsUnstablePackages"
   ],
   "timezone": "Europe/London",
   "labels": [
