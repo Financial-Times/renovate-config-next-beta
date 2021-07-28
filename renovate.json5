@@ -51,19 +51,19 @@
       rangeStrategy: 'auto',
     },
     {
-      // for devDependencies, don't create a PR until the checkbox is checked on the "master issue"
+      // for devDependencies, don't create a PR until the checkbox is checked on the "dependency issue"
       depTypeList: [
         'devDependencies',
       ],
       dependencyDashboardApproval: true,
     },
     {
-      // group n-gage & n-heroku tools into one PR and opens a PR without approval
+      // group n-gage & n-heroku tools into one PR
       packageNames: [
         '@financial-times/n-gage',
         '@financial-times/n-heroku-tools',
       ],
-      dependencyDashboardApproval: false,
+      dependencyDashboardApproval: false, // opens a PR without approval, overriding the devDependencies rule
       groupName: 'next build tools',
       groupSlug: 'next-build-tools',
     },
