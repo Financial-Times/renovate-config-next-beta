@@ -10,12 +10,9 @@
     ":automergeDisabled",
     ":ignoreModulesAndTests",
     ":maintainLockFilesDisabled",
-    ":prHourlyLimit4",
-    ":prConcurrentLimit20",
     "group:monorepos",
     "group:recommended",
-    "helpers:disableTypesNodeMajor",
-    "helpers:oddIsUnstablePackages"
+    "helpers:disableTypesNodeMajor"
   ],
   "timezone": "Europe/London",
   "labels": [
@@ -26,21 +23,21 @@
   },
   "branchPrefix": "renovate-",
   "rangeStrategy": "replace",
-  "masterIssue": true,
+  "dependencyDashboard": true,
   "prBodyNotes": [
     ":information_source: Find our documentation at https://github.com/Financial-Times/next/wiki/Renovate."
   ],
   "packageRules": [
     {
-      "packagePatterns": [
-        "^@financial-times",
-        "^ft-next-",
-        "^ft-n-",
-        "^n-",
-        "^next-",
-        "^s3o-"
+      "matchPackagePrefixes": [
+        "@financial-times",
+        "ft-next-",
+        "ft-n-",
+        "n-",
+        "next-",
+        "s3o-"
       ],
-      "packageNames": [
+      "matchPackageNames": [
         "shellpromise",
         "fetchres",
         "isomorphic-fetch"
@@ -54,54 +51,54 @@
       "depTypeList": [
         "devDependencies"
       ],
-      "masterIssueApproval": true
+      "dependencyDashboardApproval": true
     },
     {
       "packageNames": [
         "@financial-times/n-gage",
         "@financial-times/n-heroku-tools"
       ],
-      "masterIssueApproval": false,
+      "dependencyDashboardApproval": false,
       "groupName": "next build tools",
       "groupSlug": "next-build-tools"
     },
     {
-      "packagePatterns": [
-        "^o-"
+      "matchPackagePrefixes": [
+        "o-"
       ],
       "packageNames": [
         "@financial-times/n-profile-ui",
         "@financial-times/n-live-chat"
       ],
-      "masterIssueApproval": true
+      "dependencyDashboardApproval": true
     },
     {
-      "packagePatterns": [
-        "^@financial-times/x-"
+      "matchPackagePrefixes": [
+        "@financial-times/x-"
       ],
       "groupName": "x-dash monorepo",
       "groupSlug": "x-dash"
     },
     {
-      "packagePatterns": [
-        "^@financial-times/ads-"
+      "matchPackagePrefixes": [
+        "@financial-times/ads-"
       ],
       "groupName": "advertising monorepo",
       "groupSlug": "advertising"
     },
     {
-      "packagePatterns": [
-        "^@financial-times/privacy-"
+      "matchPackagePrefixes": [
+        "@financial-times/privacy-"
       ],
       "groupName": "privacy monorepo",
       "groupSlug": "privacy"
     },
     {
-      "packagePatterns": [
-        "^@financial-times/dotcom-"
+      "matchPackagePrefixes": [
+        "@financial-times/dotcom-"
       ],
       "rangeStrategy": "auto",
-      "masterIssueApproval": false,
+      "dependencyDashboardApproval": false,
       "groupName": "page kit monorepo",
       "groupSlug": "page-kit"
     }
