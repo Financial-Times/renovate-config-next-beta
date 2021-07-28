@@ -1,0 +1,119 @@
+{
+  extends: [
+    ':npm',
+    ':docker',
+    ':separateMajorReleases',
+    ':combinePatchMinorReleases',
+    ':ignoreUnstable',
+    ':prImmediately',
+    ':semanticCommitsDisabled',
+    ':automergeDisabled',
+    ':ignoreModulesAndTests',
+    ':maintainLockFilesDisabled', // not updating lockfiles unless it is doing an explicit upgrade
+    'group:monorepos',
+    'group:recommended',
+    'helpers:disableTypesNodeMajor',
+  ],
+  timezone: 'Europe/London',
+  labels: [
+    'dependencies',
+  ],
+  node: {
+    supportPolicy: [
+      'lts',
+    ],
+  },
+  branchPrefix: 'renovate-',
+  rangeStrategy: 'replace', // replace the version range with new one if new version is outside old range in package.json
+  dependencyDashboard: true,
+  prBodyNotes: [
+    ':information_source: Find our documentation at https://github.com/Financial-Times/next/wiki/Renovate.',
+  ],
+  packageRules: [
+    {
+      // enables range strategy auto (pin dependencies if it's an app and not a library) for internal packages + the ones stated
+      matchPackagePrefixes: [
+        '@financial-times',
+        'ft-next-',
+        'ft-n-',
+        'n-',
+        'next-',
+        's3o-',
+      ],
+      matchPackageNames: [
+        'shellpromise',
+        'fetchres',
+        'isomorphic-fetch',
+      ],
+      depTypeList: [
+        'dependencies',
+      ],
+      rangeStrategy: 'auto',
+    },
+    {
+      // for devDependencies, don't create a PR until the checkbox is checked on the "master issue"
+      depTypeList: [
+        'devDependencies',
+      ],
+      dependencyDashboardApproval: true,
+    },
+    {
+      // group n-gage & n-heroku tools into one PR and opens a PR without approval
+      packageNames: [
+        '@financial-times/n-gage',
+        '@financial-times/n-heroku-tools',
+      ],
+      dependencyDashboardApproval: false,
+      groupName: 'next build tools',
+      groupSlug: 'next-build-tools',
+    },
+    {
+      // force approval on origami packages, n-profile-ui and n-live-chat
+      matchPackagePrefixes: [
+        'o-',
+      ],
+      packageNames: [
+        '@financial-times/n-profile-ui',
+        '@financial-times/n-live-chat',
+      ],
+      dependencyDashboardApproval: true,
+    },
+    {
+      // group x-dash packages together
+      matchPackagePrefixes: [
+        '@financial-times/x-',
+      ],
+      groupName: 'x-dash monorepo',
+      groupSlug: 'x-dash',
+    },
+    {
+      // group ads packages together
+      matchPackagePrefixes: [
+        '@financial-times/ads-',
+      ],
+      groupName: 'advertising monorepo',
+      groupSlug: 'advertising',
+    },
+    {
+      // group privacy packages together
+      matchPackagePrefixes: [
+        '@financial-times/privacy-',
+      ],
+      groupName: 'privacy monorepo',
+      groupSlug: 'privacy',
+    },
+    {
+      // group page kit packages together
+      matchPackagePrefixes: [
+        '@financial-times/dotcom-',
+      ],
+      rangeStrategy: 'auto',
+      dependencyDashboardApproval: false,
+      groupName: 'page kit monorepo',
+      groupSlug: 'page-kit',
+    },
+  ],
+  ignoreDeps: [
+    'bower',
+  ],
+}
