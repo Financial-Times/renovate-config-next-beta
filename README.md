@@ -1,9 +1,16 @@
-# renovate-config-next
+# renovate-config-next-beta
 
-[![CircleCI](https://circleci.com/gh/Financial-Times/renovate-config-next.svg?style=svg)](https://circleci.com/gh/Financial-Times/renovate-config-next)
+[![CircleCI](https://circleci.com/gh/Financial-Times/renovate-config-next-beta.svg?style=svg)](https://circleci.com/gh/Financial-Times/renovate-config-next-beta)
 
 > Shared [Renovate](https://renovatebot.com/) configuration for FT.com.
 
+## Changes in the Beta Version
+This beta version is a fork of the [renovate-config-next](https://github.com/Financial-Times/renovate-config-next) repo, but since that configuration can't be versioned, this repo contains some backwards-incompatible changes that we wanted to introduce.
+
+Changes include:
+- setting `dependencyDashboardApproval` to default to true for all repos preventing Renovate from opening PRs for most things without a manual step.
+- keeping the `rangeStrategy` as `replace`, but removing the override that would set it to `auto` for internal packages.
+- removing the `:docker` preset.
 ## Our Configuration
 
 We have a custom set of rules for FT.com repositories. We are generally...
