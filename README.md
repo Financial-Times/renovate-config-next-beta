@@ -38,7 +38,7 @@ Reference the shared configuration in your repository's own `renovate.json` like
 ```json
 {
   "extends": [
-    "github>financial-times/renovate-config-next"
+    "github>financial-times/renovate-config-next-beta"
   ]
 }
 ```
