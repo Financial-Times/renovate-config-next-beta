@@ -1,5 +1,5 @@
 {
-  "name": "renovate-config-next",
+  "name": "renovate-config-next-beta",
   "version": "0.0.0",
   "description": "Shared Renovate configuration for FT.com.",
   "main": "index.js",
