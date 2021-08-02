@@ -8,9 +8,9 @@
 This beta version is a fork of the [renovate-config-next](https://github.com/Financial-Times/renovate-config-next) repo, but since that configuration can't be versioned, this repo contains some backwards-incompatible changes that we wanted to introduce.
 
 Changes include:
-- setting `dependencyDashboardApproval` to default to true for all repos preventing Renovate from opening PRs for most things without a manual step.
-- keeping the `rangeStrategy` as `replace`, but removing the override that would set it to `auto` for internal packages.
-- removing the `:docker` preset.
+- setting `dependencyDashboardApproval` to default to true for all repos preventing Renovate from opening PRs for most things without a manual step. this will significantly reduce the PR noise in repositories, instead moving update control to the 'dependency dashboard' issue Renovate creates.
+- keeping the `rangeStrategy` as `replace`, but removing the override that would set it to `auto` for internal packages. 'auto' was forcibly pinning the versions of internal repositories, which is unnecessary -- if a patch update is important/relevant we will notify the appropriate teams (and likely have already been working with them on the fix) and don't need to alert other parties.
+- removing the `:docker` preset. this only served to update the docker image version of node we are using in the CircleCI config, which didn't respect the node `supportPolicy` setting and kept trying to update to later versions of node prematurely.
 ## Our Configuration
 
 We have a custom set of rules for FT.com repositories. We are generally...
