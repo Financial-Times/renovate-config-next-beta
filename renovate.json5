@@ -31,7 +31,6 @@
   ],
   packageRules: [
     {
-      // enables range strategy auto (pin dependencies if it's an app and not a library) for internal packages + the ones stated
       matchPackagePrefixes: [
         '@financial-times',
         'ft-next-',
