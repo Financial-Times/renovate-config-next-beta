@@ -1,0 +1,110 @@
+{
+ "extends": [
+  ":npm",
+  ":separateMajorReleases",
+  ":combinePatchMinorReleases",
+  ":ignoreUnstable",
+  ":prImmediately",
+  ":semanticCommitsDisabled",
+  ":automergeDisabled",
+  ":ignoreModulesAndTests",
+  ":maintainLockFilesDisabled",
+  "group:monorepos",
+  "group:recommended",
+  "helpers:disableTypesNodeMajor"
+ ],
+ "timezone": "Europe/London",
+ "labels": [
+  "dependencies"
+ ],
+ "node": {
+  "supportPolicy": [
+   "lts"
+  ]
+ },
+ "branchPrefix": "renovate-",
+ "rangeStrategy": "replace",
+ "dependencyDashboard": true,
+ "dependencyDashboardApproval": true,
+ "prBodyNotes": [
+  ":information_source: Find our documentation at https://github.com/Financial-Times/next/wiki/Renovate."
+ ],
+ "packageRules": [
+  {
+   "matchPackagePrefixes": [
+    "@financial-times",
+    "ft-next-",
+    "ft-n-"
+   ],
+   "matchPackageNames": [
+    "shellpromise",
+    "fetchres",
+    "isomorphic-fetch",
+    "next-metrics",
+    "n-health"
+   ],
+   "depTypeList": [
+    "dependencies"
+   ],
+   "dependencyDashboardApproval": false
+  },
+  {
+   "depTypeList": [
+    "devDependencies"
+   ],
+   "dependencyDashboardApproval": true
+  },
+  {
+   "packageNames": [
+    "@financial-times/n-gage",
+    "@financial-times/n-heroku-tools"
+   ],
+   "dependencyDashboardApproval": false,
+   "groupName": "next build tools",
+   "groupSlug": "next-build-tools"
+  },
+  {
+   "matchPackagePrefixes": [
+    "o-"
+   ],
+   "packageNames": [
+    "@financial-times/n-profile-ui",
+    "@financial-times/n-live-chat"
+   ],
+   "dependencyDashboardApproval": true
+  },
+  {
+   "matchPackagePrefixes": [
+    "@financial-times/x-"
+   ],
+   "groupName": "x-dash monorepo",
+   "groupSlug": "x-dash"
+  },
+  {
+   "matchPackagePrefixes": [
+    "@financial-times/ads-"
+   ],
+   "groupName": "advertising monorepo",
+   "groupSlug": "advertising"
+  },
+  {
+   "matchPackagePrefixes": [
+    "@financial-times/privacy-"
+   ],
+   "groupName": "privacy monorepo",
+   "groupSlug": "privacy"
+  },
+  {
+   "matchPackagePrefixes": [
+    "@financial-times/dotcom-"
+   ],
+   "rangeStrategy": "auto",
+   "dependencyDashboardApproval": false,
+   "groupName": "page kit monorepo",
+   "groupSlug": "page-kit"
+  }
+ ],
+ "ignoreDeps": [
+  "bower"
+ ]
+}
