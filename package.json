@@ -4,10 +4,19 @@
   "description": "Shared Renovate configuration for FT.com.",
   "main": "index.js",
   "scripts": {
+    "verify": "./scripts/verify.sh",
+    "build": "node ./scripts/json5-to-json.js",
     "test": "renovate-config-validator"
   },
   "license": "MIT",
   "devDependencies": {
+    "husky": "^4.3.8",
+    "json5": "^2.2.0",
     "renovate": "^25.59.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run verify && npm run build && git add renovate.json"
+    }
   }
 }

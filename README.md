@@ -45,4 +45,4 @@ Reference the shared configuration in your repository's own `renovate.json` like
 
 ## Development
 
-Our shared configuration is defined in [`renovate.json`](renovate.json).
+Our shared configuration is defined in [`renovate-config.json5`](renovate-config.json5). This file is transpiled on a pre-commit hook into the [`renovate.json`](renovate.json) file. Modifying the [`renovate.json`](renovate.json) won't allow you to commit, so make sure all of your modifications go on the `json5` version. If for some reason there are untracked changes on your `renovate.json` file, make sure to delete the file to be able to commit.
