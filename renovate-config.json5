@@ -56,6 +56,11 @@
       dependencyDashboardApproval: true,
     },
     {
+      // disable volta (i.e. pinned Node and npm version) updates
+      matchDepTypes: ['volta'],
+      enabled: false
+    },
+    {
       // group n-gage & n-heroku tools into one PR
       packageNames: [
         '@financial-times/n-gage',
