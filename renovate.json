@@ -17,11 +17,6 @@
  "labels": [
   "dependencies"
  ],
- "node": {
-  "supportPolicy": [
-   "lts"
-  ]
- },
  "branchPrefix": "renovate-",
  "rangeStrategy": "replace",
  "dependencyDashboard": true,

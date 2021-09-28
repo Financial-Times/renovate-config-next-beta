@@ -17,11 +17,6 @@
   labels: [
     'dependencies',
   ],
-  node: {
-    supportPolicy: [
-      'lts',
-    ],
-  },
   branchPrefix: 'renovate-',
   rangeStrategy: 'replace', // replace the version range with new one if new version is outside old range in package.json
   dependencyDashboard: true,
