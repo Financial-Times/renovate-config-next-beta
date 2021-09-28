@@ -55,6 +55,12 @@
    "dependencyDashboardApproval": true
   },
   {
+   "matchDepTypes": [
+    "volta"
+   ],
+   "enabled": false
+  },
+  {
    "packageNames": [
     "@financial-times/n-gage",
     "@financial-times/n-heroku-tools"
