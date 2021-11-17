@@ -1,10 +1,16 @@
-version: 2
+version: 2.1
+
+orbs:
+  node: circleci/node@4.6.0
 
 jobs:
   build:
-    docker:
-      - image: circleci/node:12
+    executor:
+      name: node/default
+      tag: "12.22"
     steps:
       - checkout
-      - run: npm install
+      - node/install-npm:
+          version: "8"
+      - node/install-packages
       - run: npm test
