@@ -9,6 +9,7 @@
     ':automergeDisabled',
     ':ignoreModulesAndTests',
     ':maintainLockFilesDisabled', // not updating lockfiles unless it is doing an explicit upgrade
+    ':disableVulnerabilityAlerts',
     'group:monorepos',
     'group:recommended',
     'helpers:disableTypesNodeMajor',
