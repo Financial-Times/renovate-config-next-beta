@@ -6,7 +6,7 @@
   "scripts": {
     "verify": "./scripts/verify.sh",
     "build": "node ./scripts/json5-to-json.js",
-    "test": "renovate-config-validator"
+    "test": "renovate-config-validator && ./scripts/test.sh"
   },
   "license": "MIT",
   "devDependencies": {
